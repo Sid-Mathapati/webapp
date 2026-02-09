@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/Global.css'; // Assuming uppercase G based on user file listing, or I'll check. Actually previous viewed file was src/styles/global.css (lowercase).
+import '../../styles/global.css';
 import '../../components/InquiryModal/InquiryModal.css'; // Reuse form styles if possible, or add new ones.
 import { submitInquiry } from '../../config/api.config';
 

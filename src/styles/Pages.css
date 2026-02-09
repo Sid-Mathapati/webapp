@@ -1,0 +1,409 @@
+.page-container {
+    padding-top: 80px;
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(214, 57, 57, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(26, 54, 93, 0.15) 0%, transparent 40%);
+}
+
+.page-hero {
+    background: transparent;
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .page-hero {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        gap: 4rem;
+        padding: 8rem 4rem 6rem;
+    }
+
+    .page-hero-content {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .page-hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-hero-image img {
+        max-width: 100%;
+        height: auto;
+        filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+    }
+
+    .page-hero h1 {
+        font-size: 4rem;
+    }
+}
+
+.page-hero p {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .page-hero p {
+        margin: 0;
+    }
+}
+
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.page-content h2 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.page-section {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(214, 57, 57, 0.1);
+    border-color: rgba(214, 57, 57, 0.3);
+}
+
+.page-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.page-text {
+    flex: 1;
+}
+
+.page-text h3 {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.page-text h3::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 24px;
+    background: var(--color-secondary);
+    border-radius: 2px;
+}
+
+.page-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-secondary);
+}
+
+.page-text li {
+    margin-bottom: 0.8rem;
+    color: var(--color-text-secondary);
+}
+
+.page-text strong {
+    color: var(--color-text-primary);
+}
+
+.page-image {
+    flex: 1;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border-radius: var(--radius-lg);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: var(--color-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.page-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.page-section:hover .page-image img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .page-section:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+/* ============================================
+   Pricing Page Styles
+   ============================================ */
+
+.pricing-page {
+    padding-bottom: 4rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+}
+
+.pricing-card {
+    position: relative;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card.popular {
+    background: var(--color-bg-card-hover);
+    border-color: var(--color-primary);
+    transform: scale(1.02);
+}
+
+.pricing-card.popular:hover {
+    transform: scale(1.02) translateY(-8px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.pricing-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.pricing-description {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.pricing-price {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.price-value {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.price-duration {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    flex: 1;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-features li.included .feature-check {
+    color: var(--color-success);
+}
+
+.pricing-features li.excluded {
+    color: var(--color-text-muted);
+}
+
+.pricing-features li.excluded .feature-check {
+    color: var(--color-text-muted);
+}
+
+.feature-check {
+    font-weight: 700;
+    font-size: 1rem;
+    min-width: 20px;
+}
+
+.pricing-cta {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-cta.primary {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+}
+
+.pricing-cta.primary:hover {
+    background: var(--color-primary-hover);
+    box-shadow: var(--shadow-glow);
+}
+
+.pricing-cta.outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.pricing-cta.outline:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Pricing FAQ */
+.pricing-faq {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.pricing-faq h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-text-primary);
+    margin-bottom: 2rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: var(--color-bg-card);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.faq-item h4 {
+    color: var(--color-text-primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .pricing-card.popular {
+        transform: none;
+    }
+
+    .pricing-card.popular:hover {
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}

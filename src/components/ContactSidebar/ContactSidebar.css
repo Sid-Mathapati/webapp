@@ -1,0 +1,78 @@
+/* ============================================
+   Contact Sidebar Styles
+   ============================================ */
+
+.contact-sidebar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: var(--z-fixed);
+}
+
+.contact-sidebar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4) var(--space-3);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.contact-sidebar-button:hover {
+    background-color: var(--color-primary-hover);
+    padding-right: var(--space-4);
+    box-shadow: var(--shadow-glow-lg);
+}
+
+.contact-sidebar-text {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+}
+
+/* === Mobile Styles === */
+@media (max-width: 768px) {
+    .contact-sidebar {
+        top: auto;
+        bottom: var(--space-6);
+        right: var(--space-4);
+        transform: none;
+    }
+
+    .contact-sidebar-button {
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+        border-radius: var(--radius-full);
+        padding: var(--space-3) var(--space-5);
+    }
+
+    .contact-sidebar-button:hover {
+        padding-right: var(--space-5);
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-sidebar {
+        right: var(--space-3);
+        bottom: var(--space-4);
+    }
+
+    .contact-sidebar-button {
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .contact-sidebar-text {
+        font-size: 10px;
+    }
+}

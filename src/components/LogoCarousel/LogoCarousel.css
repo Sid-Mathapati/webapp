@@ -1,0 +1,79 @@
+.logo-carousel-section {
+    padding: 3rem 0;
+    background-color: var(--color-bg-primary);
+    /* Dark Navy */
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-carousel-title {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.logo-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-carousel-track {
+    display: flex;
+    width: fit-content;
+    animation: scrollLogos 20s linear infinite;
+}
+
+.logo-strip {
+    height: 60px;
+    /* Adjust based on image height */
+    width: auto;
+    object-fit: contain;
+    margin-right: 0;
+    /* Image itself contains spacing if generated correctly, or add gap */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.logo-carousel-track:hover .logo-strip {
+    opacity: 1;
+    animation-play-state: paused;
+}
+
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Move by half the total width (since we duplicated) */
+    }
+}
+
+/* Gradient Masks for Fade Effect */
+.logo-carousel-container::before,
+.logo-carousel-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.logo-carousel-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-bg-primary), transparent);
+}
+
+.logo-carousel-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-bg-primary), transparent);
+}

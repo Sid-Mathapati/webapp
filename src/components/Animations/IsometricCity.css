@@ -1,0 +1,119 @@
+/* ============================================
+   Isometric City Animation Styles
+   ============================================ */
+
+.isometric-city {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    background-color: #FAF7F2;
+}
+
+.isometric-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === Element Animations === */
+.animate-element {
+    opacity: 0;
+    animation: fadeInElement 0.8s ease forwards;
+}
+
+@keyframes fadeInElement {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Truck Animation === */
+.truck-animation {
+    animation: truckMove 12s ease-in-out infinite;
+}
+
+@keyframes truckMove {
+
+    0%,
+    100% {
+        transform: translate(200px, 370px);
+    }
+
+    25% {
+        transform: translate(280px, 350px);
+    }
+
+    50% {
+        transform: translate(350px, 330px);
+    }
+
+    75% {
+        transform: translate(280px, 350px);
+    }
+}
+
+/* === Turbine Blade Rotation === */
+.turbine-blades {
+    animation: rotateTurbine 4s linear infinite;
+}
+
+@keyframes rotateTurbine {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* === Data Flow Dots === */
+.flow-dot {
+    filter: drop-shadow(0 0 4px rgba(232, 93, 4, 0.6));
+}
+
+/* === Hover Effects === */
+.warehouse:hover,
+.restaurant:hover,
+.office:hover,
+.store:hover {
+    filter: url(#softShadow) brightness(1.05);
+    cursor: pointer;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+    .isometric-city {
+        max-width: 100%;
+        border-radius: var(--radius-md);
+    }
+}
+
+/* === Reduced Motion === */
+@media (prefers-reduced-motion: reduce) {
+    .animate-element {
+        animation: none;
+        opacity: 1;
+    }
+
+    .truck-animation {
+        animation: none;
+    }
+
+    .turbine-blades {
+        animation: none;
+    }
+
+    .flow-dot {
+        animation: none;
+    }
+}

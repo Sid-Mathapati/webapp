@@ -1,0 +1,51 @@
+.retail-checkout-container {
+    width: 100%;
+    height: 500px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.retail-checkout-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.retail-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    pointer-events: none;
+}
+
+.retail-stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #1a365d;
+}
+
+.retail-stat:last-child {
+    margin-bottom: 0;
+}
+
+.stat-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e85d04;
+}
+
+.stat-dot.success {
+    background: #38a169;
+}

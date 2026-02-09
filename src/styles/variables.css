@@ -1,0 +1,126 @@
+/* ============================================
+   StoreZen Design System - CSS Variables
+   Petpooja-Inspired Premium Theme
+   ============================================ */
+
+:root {
+    /* === Primary Colors (Premium Red) === */
+    --color-primary: #D63939;
+    --color-primary-hover: #E85454;
+    --color-primary-light: #FFE5E5;
+    --color-primary-dark: #B52E2E;
+    --color-primary-glow: rgba(214, 57, 57, 0.4);
+
+    /* === Secondary Colors (Deep Blue) === */
+    --color-secondary: #1A365D;
+    --color-secondary-light: #2D4A7C;
+    --color-secondary-dark: #0D1B2A;
+
+    /* === Background Colors (Deep Navy) === */
+    --color-bg-primary: #0D1B2A;
+    --color-bg-secondary: #1A2332;
+    --color-bg-accent: #243447;
+    --color-bg-dark: #060D15;
+    --color-bg-gradient-start: #0D1B2A;
+    --color-bg-gradient-end: #1A365D;
+    --color-bg-card: #152234;
+    --color-bg-card-hover: #1D2D42;
+
+    /* === Text Colors === */
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #B8C5D3;
+    --color-text-muted: #6B7C93;
+    --color-text-light: #FFFFFF;
+    --color-text-accent: #D63939;
+
+    /* === Border Colors === */
+    --color-border: #2D3E50;
+    --color-border-light: #3D5066;
+    --color-border-dark: #1A2332;
+
+    /* === Status Colors === */
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+    --color-info: #3B82F6;
+
+    /* === Typography === */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Inter', 'Roboto Condensed', sans-serif;
+
+    /* Font Sizes */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 40px;
+    --font-size-4xl: 48px;
+    --font-size-5xl: 56px;
+
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+
+    /* === Spacing === */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+
+    /* === Layout === */
+    --max-width: 1200px;
+    --max-width-narrow: 800px;
+    --max-width-wide: 1400px;
+    --header-height: 72px;
+    --sidebar-width: 40px;
+
+    /* === Border Radius === */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+
+    /* === Shadows === */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.35);
+    --shadow-glow: 0 0 20px rgba(214, 57, 57, 0.3);
+    --shadow-glow-lg: 0 0 40px rgba(214, 57, 57, 0.4);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+    /* === Transitions === */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* === Z-Index Scale === */
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-tooltip: 600;
+}
+
+/* Dark Mode Variables - extend as needed */

@@ -1,0 +1,63 @@
+/* ============================================
+   Back To Home Button Styles
+   ============================================ */
+
+.back-to-home-btn {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    /* High z-index to ensure visibility */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    background: linear-gradient(135deg, var(--color-primary, #667eea), var(--color-secondary, #764ba2));
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-family: var(--font-family, sans-serif);
+    font-weight: 600;
+    font-size: 0.9rem;
+    backdrop-filter: blur(5px);
+}
+
+.back-to-home-btn svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.back-to-home-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    padding-right: 1.5rem;
+    /* Subtle expansion */
+}
+
+.back-to-home-btn:hover svg {
+    transform: scale(1.1);
+}
+
+.back-text {
+    display: inline-block;
+}
+
+/* === Mobile Styles === */
+@media (max-width: 768px) {
+    .back-to-home-btn {
+        bottom: 1.5rem;
+        left: 1rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .back-text {
+        font-size: 0.8rem;
+    }
+
+    /* Option: On very small screens, just show icon to save space? */
+    /* keeping text for clarity as requested */
+}

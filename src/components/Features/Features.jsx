@@ -7,19 +7,19 @@ const features = [
         icon: '💳',
         title: 'POS & Billing',
         description: 'Fast checkout with invoice generation, payment tracking (cash, card, UPI), and complete billing history.',
-        image: '/images/illustrations/pos-billing.png',
+        image: '/webapp/images/illustrations/pos-billing.png',
     },
     {
         icon: '📦',
         title: 'Inventory Management',
         description: 'Track stock levels across locations, get low stock alerts, and automate reordering to never run out.',
-        image: '/images/illustrations/inventory-management.png',
+        image: '/webapp/images/illustrations/inventory-management.png',
     },
     {
         icon: '📊',
         title: 'Reports & Analytics',
         description: 'Comprehensive business insights with sales, inventory, and customer analytics dashboards.',
-        image: '/images/illustrations/analytics-reports.png',
+        image: '/webapp/images/illustrations/analytics-reports.png',
     },
 ];
 

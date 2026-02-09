@@ -23,7 +23,7 @@ const RealTimeTracking = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/hero-dashboard.png" alt="Real-time Business Dashboard" />
+                        <img src="/webapp/images/illustrations/pos-billing.png" alt="Real-time Business Dashboard" />
                     </div>
                 </section>
 
@@ -39,7 +39,7 @@ const RealTimeTracking = () => {
                         </ul>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/pos-billing.png" alt="Live Transactions View" />
+                        <img src="/webapp/images/illustrations/pos-billing.png" alt="Live Transactions View" />
                     </div>
                 </section>
             </div>

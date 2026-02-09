@@ -23,7 +23,7 @@ const AnalyticsDashboard = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/analytics-reports.png" alt="Advanced Analytics Dashboard" />
+                        <img src="/webapp/images/illustrations/analytics-reports.png" alt="Advanced Analytics Dashboard" />
                     </div>
                 </section>
 
@@ -38,8 +38,8 @@ const AnalyticsDashboard = () => {
                             <li><strong>Daily Digest</strong>: Automated email summaries of key business metrics.</li>
                         </ul>
                     </div>
-                    <div className="page-image">
-                        <img src="images/illustrations/hero-dashboard.png" alt="Executive Reporting View" />
+                    <div className="section-illustration">
+                        <img src="/webapp/images/illustrations/analytics-reports.png" alt="Analytics Dashboard" />
                     </div>
                 </section>
             </div>

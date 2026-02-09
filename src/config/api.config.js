@@ -6,8 +6,8 @@
  */
 
 export const API_CONFIG = {
-  // Default endpoint for inquiry form submissions
-  INQUIRY_ENDPOINT: "http://localhost:3000/api/inquiries/submit",
+  // Default endpoint for inquiry form submissions: check environment variable first, then fallback to localhost
+  INQUIRY_ENDPOINT: import.meta.env.VITE_API_URL || "http://localhost:3000/api/inquiries/submit",
 
   // Request timeout in milliseconds
   TIMEOUT: 10000,

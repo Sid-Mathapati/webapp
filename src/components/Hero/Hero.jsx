@@ -99,7 +99,7 @@ const Hero = () => {
                 <div className="hero-visual">
                     <div className="hero-mockup">
                         <img
-                            src="images/illustrations/hero-dashboard.png"
+                            src="/webapp/images/illustrations/pos-billing.png"
                             alt="StoreZen Dashboard - Business Management Software"
                             className="hero-mockup-image"
                         />

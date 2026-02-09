@@ -15,9 +15,9 @@ const outletData = {
             { title: "Guest Profiles", desc: "Track preferences and allergies for VIP service." }
         ],
         icon: "🍷",
-        iconImage: "/images/icons/outlets/fine-dine-icon.png",
+        iconImage: "/webapp/images/icons/outlets/fine-dine-icon.png",
         color: "#722F37",
-        image: "/images/outlets/fine-dine.png"
+        image: "/webapp/images/outlets/fine-dine.png"
     },
     'cafe': {
         title: "Cafe & Coffee Shop POSS",
@@ -30,9 +30,9 @@ const outletData = {
             { title: "Inventory", desc: "Track coffee beans and milk usage by the gram/ml." }
         ],
         icon: "☕",
-        iconImage: "/images/icons/outlets/cafe-icon.png",
+        iconImage: "/webapp/images/icons/outlets/cafe-icon.png",
         color: "#6F4E37",
-        image: "/images/outlets/cafe-shop.png"
+        image: "/webapp/images/outlets/cafe-shop.png"
     },
     'qsr': {
         title: "QSR & Fast Food POSS",
@@ -45,9 +45,9 @@ const outletData = {
             { title: "Token Display", desc: "Automated order ready notifications for pickup." }
         ],
         icon: "🍔",
-        iconImage: "/images/icons/outlets/qsr-icon.png",
+        iconImage: "/webapp/images/icons/outlets/qsr-icon.png",
         color: "#FF9933",
-        image: "/images/outlets/qsr-fastfood.png"
+        image: "/webapp/images/outlets/qsr-fastfood.png"
     },
     'pizza': {
         title: "Pizza POSS Software",
@@ -60,9 +60,9 @@ const outletData = {
             { title: "Inventory", desc: "Recipe management based on size and crust type." }
         ],
         icon: "🍕",
-        iconImage: "/images/icons/outlets/pizza-icon.png",
+        iconImage: "/webapp/images/icons/outlets/pizza-icon.png",
         color: "#FF4500",
-        image: "/images/outlets/pizza-outlet.png"
+        image: "/webapp/images/outlets/pizza-outlet.png"
     },
     'bakery': {
         title: "Bakery & Confectionery POSS",
@@ -75,9 +75,9 @@ const outletData = {
             { title: "Scale Integration", desc: "Direct integration with weighing scales." }
         ],
         icon: "🍰",
-        iconImage: "/images/icons/outlets/bakery-icon.png",
+        iconImage: "/webapp/images/icons/outlets/bakery-icon.png",
         color: "#FF69B4",
-        image: "/images/outlets/bakery-shop.png"
+        image: "/webapp/images/outlets/bakery-shop.png"
     },
     'cloud-kitchen': {
         title: "Cloud Kitchen Management",
@@ -90,9 +90,9 @@ const outletData = {
             { title: "Centralized Reports", desc: "Combined or separate analytics for each brand." }
         ],
         icon: "☁️",
-        iconImage: "/images/icons/outlets/cloud-kitchen-icon.png",
+        iconImage: "/webapp/images/icons/outlets/cloud-kitchen-icon.png",
         color: "#4ECDC4",
-        image: "/images/outlets/cloud-kitchen.png"
+        image: "/webapp/images/outlets/cloud-kitchen.png"
     }
 };
 

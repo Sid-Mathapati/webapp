@@ -1,55 +1,70 @@
 /* ============================================
-   Hero Section Styles - Petpooja Inspired
+   Hero Section Styles - Fluid & Responsive
    ============================================ */
 
 .hero {
     position: relative;
     min-height: 100vh;
-    padding-top: calc(var(--header-height) + var(--space-12));
-    padding-bottom: var(--space-8);
+    /* Ensure full viewport height */
+    padding-top: calc(var(--header-height) + clamp(2rem, 5vw, 4rem));
+    /* Fluid top padding */
+    padding-bottom: clamp(2rem, 5vw, 4rem);
+    /* Fluid bottom padding */
     background: linear-gradient(135deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* Vertically center content if height allows */
 }
 
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--space-12);
-    max-width: var(--max-width);
+    gap: 5%;
+    /* Fluid gap */
+    width: 90%;
+    /* Fluid container width */
+    max-width: 1400px;
+    /* Cap for ultra-wide screens */
     margin: 0 auto;
-    padding: 0 var(--space-6);
+    padding: 0;
 }
 
 /* === Hero Content (Left Side) === */
 .hero-content {
     flex: 1;
-    max-width: 580px;
+    max-width: 600px;
+    /* Logical cap for readability */
     z-index: 2;
+    padding-right: 2%;
+    /* Prevent touching image on tight fits */
 }
 
 .hero-badge {
     display: inline-block;
-    padding: var(--space-2) var(--space-4);
+    padding: 0.5em 1em;
     background: rgba(214, 57, 57, 0.15);
     border: 1px solid rgba(214, 57, 57, 0.3);
-    border-radius: var(--radius-full);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
+    border-radius: 999px;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    font-weight: 600;
     color: var(--color-primary);
-    margin-bottom: var(--space-6);
+    margin-bottom: 1.5rem;
     animation: fadeInDown 0.6s ease forwards;
 }
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: var(--font-weight-bold);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    /* Massive fluid range */
+    font-weight: 800;
     line-height: 1.1;
     color: var(--color-text-primary);
-    margin-bottom: var(--space-4);
+    margin-bottom: 1rem;
     animation: fadeInUp 0.6s ease 0.1s forwards;
     opacity: 0;
+    letter-spacing: -0.02em;
 }
 
 .hero-title-line {
@@ -60,7 +75,8 @@
     display: inline-block;
     color: var(--color-primary);
     position: relative;
-    min-width: 280px;
+    min-width: 0.5em;
+    /* Fallback */
 }
 
 .rotating-word {
@@ -76,34 +92,37 @@
 
 .hero-subtitle {
     font-family: var(--font-heading);
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-normal);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 400;
     color: var(--color-text-secondary);
-    margin-bottom: var(--space-4);
+    margin-bottom: 1rem;
     animation: fadeInUp 0.6s ease 0.2s forwards;
     opacity: 0;
 }
 
 .hero-description {
-    font-size: var(--font-size-md);
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
     color: var(--color-text-secondary);
-    line-height: var(--line-height-relaxed);
-    margin-bottom: var(--space-8);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 90%;
     animation: fadeInUp 0.6s ease 0.3s forwards;
     opacity: 0;
 }
 
 .hero-description .highlight {
     color: var(--color-primary);
-    font-weight: var(--font-weight-medium);
+    font-weight: 500;
 }
 
 /* === Hero CTA Buttons === */
 .hero-cta-group {
     display: flex;
     align-items: center;
-    gap: var(--space-4);
-    margin-bottom: var(--space-8);
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* Allow wrapping on small screens */
+    margin-bottom: 3rem;
     animation: fadeInUp 0.6s ease 0.4s forwards;
     opacity: 0;
 }
@@ -111,27 +130,30 @@
 .hero-cta {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-2);
-    padding: var(--space-4) var(--space-8);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    border-radius: var(--radius-md);
+    justify-content: center;
+    gap: 0.5rem;
+    padding: clamp(0.75rem, 1.5vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    font-weight: 600;
+    border-radius: 8px;
+    /* Slightly squarer than pill */
     cursor: pointer;
-    transition: all var(--transition-normal);
+    transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .hero-cta.primary {
     color: var(--color-text-light);
     background-color: var(--color-primary);
     border: 2px solid var(--color-primary);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 15px rgba(214, 57, 57, 0.3);
 }
 
 .hero-cta.primary:hover {
     background-color: var(--color-primary-hover);
     border-color: var(--color-primary-hover);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-glow-lg);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(214, 57, 57, 0.4);
 }
 
 .hero-cta.secondary {
@@ -143,54 +165,57 @@
 .hero-cta.secondary:hover {
     border-color: var(--color-primary);
     color: var(--color-primary);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    background: rgba(214, 57, 57, 0.05);
+    /* Subtle tint */
 }
 
 .hero-cta svg {
-    width: 20px;
-    height: 20px;
-    transition: transform var(--transition-fast);
+    width: 1.2em;
+    height: 1.2em;
+    transition: transform 0.2s ease;
 }
 
 .hero-cta:hover svg {
-    transform: translateX(4px);
+    transform: translateX(3px);
 }
 
 /* === Trust Badges === */
 .hero-trust {
     animation: fadeInUp 0.6s ease 0.5s forwards;
     opacity: 0;
+    margin-top: auto;
+    /* Push to bottom of content area if needed */
 }
 
 .trust-logos {
     display: flex;
     align-items: center;
-    gap: var(--space-8);
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .trust-logo {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
-    font-size: var(--font-size-sm);
+    gap: 0.5rem;
+    font-size: 0.9rem;
     color: var(--color-text-muted);
-    transition: color var(--transition-fast);
 }
 
 .trust-logo strong {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
+    font-size: 1.5rem;
+    font-weight: 700;
     color: var(--color-primary);
 }
 
-.trust-logo:hover {
-    color: var(--color-text-primary);
-}
-
-/* === Hero Visual (Right Side) - Software Mockup === */
+/* === Hero Visual (Right Side) === */
 .hero-visual {
-    flex: 0 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /* Center image within its half */
+    align-items: center;
     position: relative;
     z-index: 1;
     animation: fadeInRight 0.8s ease 0.3s forwards;
@@ -199,18 +224,22 @@
 
 .hero-mockup {
     position: relative;
-    width: 500px;
+    width: 100%;
+    /* Take full available width of flex item */
+    max-width: 650px;
+    /* Cap size */
     height: auto;
 }
 
 .hero-mockup-image {
     width: 100%;
     height: auto;
-    border-radius: var(--radius-xl);
+    border-radius: 24px;
     box-shadow:
-        0 25px 50px rgba(0, 0, 0, 0.4),
+        0 40px 80px -20px rgba(0, 0, 0, 0.6),
+        /* Heavy shadow for depth */
         0 0 0 1px rgba(255, 255, 255, 0.1);
-    transition: transform var(--transition-normal);
+    transition: transform 0.3s ease;
 }
 
 .hero-mockup:hover .hero-mockup-image {
@@ -222,74 +251,32 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 120%;
-    height: 120%;
-    background: radial-gradient(ellipse at center, rgba(214, 57, 57, 0.2) 0%, transparent 60%);
+    width: 140%;
+    /* Larger glow */
+    height: 140%;
+    background: radial-gradient(circle at center, rgba(214, 57, 57, 0.25) 0%, transparent 70%);
     pointer-events: none;
     z-index: -1;
+    filter: blur(40px);
 }
 
 /* === Client Logo Carousel === */
+/* Removed from absolute positioning or specific section flow styles
+   Assumed to be part of the flow now */
 .hero-clients {
-    margin-top: var(--space-12);
-    padding: var(--space-8) 0;
+    margin-top: 4rem;
+    padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    animation: fadeInUp 0.6s ease 0.6s forwards;
-    opacity: 0;
+    width: 100%;
 }
 
 .clients-label {
     text-align: center;
-    font-size: var(--font-size-sm);
+    font-size: 0.8rem;
     color: var(--color-text-muted);
-    margin-bottom: var(--space-6);
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.clients-carousel-wrapper {
-    overflow: hidden;
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
-.clients-carousel {
-    display: flex;
-    gap: var(--space-10);
-    animation: scrollLogos 25s linear infinite;
-}
-
-.clients-carousel:hover {
-    animation-play-state: paused;
-}
-
-.client-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-2);
-    min-width: 100px;
-    padding: var(--space-4);
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: var(--radius-lg);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all var(--transition-normal);
-}
-
-.client-logo:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(214, 57, 57, 0.3);
-    transform: translateY(-4px);
-}
-
-.client-icon {
-    font-size: 2rem;
-}
-
-.client-name {
-    font-size: var(--font-size-xs);
-    color: var(--color-text-muted);
-    white-space: nowrap;
+    letter-spacing: 1.5px;
 }
 
 /* === Animations === */
@@ -341,44 +328,36 @@
     }
 }
 
-@keyframes scrollLogos {
-    0% {
-        transform: translateX(0);
-    }
+/* === Responsive Breakpoints === */
 
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-/* === Responsive Styles === */
-@media (max-width: 1200px) {
-    .hero-mockup {
-        width: 420px;
-    }
-}
-
+/* Tablet (Portrait & Landscape) */
 @media (max-width: 992px) {
     .hero {
-        padding-top: calc(var(--header-height) + var(--space-8));
-        padding-bottom: var(--space-6);
+        padding-top: calc(var(--header-height) + 2rem);
+        padding-bottom: 4rem;
+        height: auto;
+        /* Allow auto height for stacking */
+        min-height: auto;
     }
 
     .hero-container {
         flex-direction: column;
         text-align: center;
+        gap: 3rem;
     }
 
     .hero-content {
         max-width: 100%;
+        /* Use full width */
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hero-title {
-        font-size: var(--font-size-3xl);
-    }
-
-    .hero-rotating-word {
-        min-width: auto;
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-cta-group {
@@ -389,70 +368,32 @@
         justify-content: center;
     }
 
-    .hero-mockup {
+    .hero-visual {
         width: 100%;
-        max-width: 450px;
+        max-width: 500px;
+        /* Cap image on tablet */
     }
 }
 
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: var(--font-size-2xl);
-    }
-
-    .hero-subtitle {
-        font-size: var(--font-size-lg);
-    }
-
-    .hero-description {
-        font-size: var(--font-size-base);
-    }
-
+/* Mobile */
+@media (max-width: 600px) {
     .hero-cta-group {
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
     }
 
     .hero-cta {
         width: 100%;
-        justify-content: center;
     }
 
-    .trust-logos {
-        gap: var(--space-4);
-    }
-}
-
-@media (max-width: 576px) {
     .trust-logos {
         flex-direction: column;
-        gap: var(--space-3);
+        gap: 1rem;
     }
 
-    .client-logo {
-        min-width: 80px;
-        padding: var(--space-3);
+    .hero-mockup-glow {
+        width: 100%;
+        height: 100%;
     }
-}
-
-/* === Decorative Elements === */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 80%;
-    height: 150%;
-    background: radial-gradient(ellipse at center, rgba(214, 57, 57, 0.08) 0%, transparent 70%);
-    pointer-events: none;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-border), transparent);
 }

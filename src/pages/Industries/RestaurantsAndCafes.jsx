@@ -23,7 +23,7 @@ const RestaurantsAndCafes = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/restaurant-management.png" alt="Interactive Table Management" />
+                        <img src="/webapp/images/illustrations/restaurant-management.png" alt="Interactive Table Management" />
                     </div>
                 </section>
 

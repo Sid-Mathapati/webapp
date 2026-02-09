@@ -19,8 +19,8 @@ const footerData = {
         { label: 'Pricing', href: '/pricing' },
     ],
     contact: {
-        address: '4/2 Cunningham Road, Bangalore 560052 India',
-        phone: '+91-7676-28-7373',
+        address: 'Spice Garden Road, Marathahalli,Bangalore 560037 India',
+        phone: '+91-7892-95-3480',
         email: 'contact@storezen.app',
     },
 };

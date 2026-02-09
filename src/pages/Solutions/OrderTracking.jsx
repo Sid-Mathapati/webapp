@@ -44,7 +44,7 @@ const OrderTracking = () => {
                         </ul>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/hero-dashboard.png" alt="Billing Analytics" />
+                        <img src="/webapp/images/illustrations/analytics-reports.png" alt="Billing Analytics" />
                     </div>
                 </section>
 

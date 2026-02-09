@@ -52,7 +52,7 @@ const RestaurantsAndCafes = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/hero-dashboard.png" alt="Kitchen Display System" />
+                        <img src="/webapp/images/illustrations/restaurant-management.png" alt="Kitchen Display System" />
                     </div>
                 </section>
             </div>

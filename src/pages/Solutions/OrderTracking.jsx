@@ -60,7 +60,7 @@ const OrderTracking = () => {
                         </button>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/customer-support-demo.png" alt="Support Team assisting with POS" />
+                        <img src="/webapp/images/illustrations/customer-support-demo.png" alt="Support Team assisting with POS" />
                     </div>
                 </section>
             </div>

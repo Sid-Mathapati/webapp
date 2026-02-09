@@ -23,7 +23,7 @@ const MultiLocationSupport = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/inventory-management.png" alt="Centralized Enterprise Dashboard" />
+                        <img src="/webapp/images/illustrations/inventory-management.png" alt="Centralized Enterprise Dashboard" />
                     </div>
                 </section>
 
@@ -39,7 +39,7 @@ const MultiLocationSupport = () => {
                         </ul>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/analytics-reports.png" alt="Multi-Branch Performance Comparison" />
+                        <img src="/webapp/images/illustrations/analytics-reports.png" alt="Multi-Branch Performance Comparison" />
                     </div>
                 </section>
             </div>

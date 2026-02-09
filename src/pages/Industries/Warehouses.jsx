@@ -23,7 +23,7 @@ const Warehouses = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/inventory-management.png" alt="Centralized Warehouse Management" />
+                        <img src="/webapp/images/illustrations/inventory-management.png" alt="Centralized Warehouse Management" />
                     </div>
                 </section>
 
@@ -39,7 +39,7 @@ const Warehouses = () => {
                         </ul>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/analytics-reports.png" alt="Multi-Branch Analytics" />
+                        <img src="/webapp/images/illustrations/analytics-reports.png" alt="Multi-Branch Analytics" />
                     </div>
                 </section>
             </div>

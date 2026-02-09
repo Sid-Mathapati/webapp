@@ -19,7 +19,7 @@ const FoodManufacturing = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/manufacturing.png" alt="Manufacturing & Production Flow" />
+                        <img src="/webapp/images/illustrations/manufacturing.png" alt="Manufacturing & Production Flow" />
                     </div>
                 </section>
 
@@ -35,7 +35,7 @@ const FoodManufacturing = () => {
                         </ul>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/inventory-management.png" alt="Material Inventory Control" />
+                        <img src="/webapp/images/illustrations/inventory-management.png" alt="Material Inventory Control" />
                     </div>
                 </section>
             </div>

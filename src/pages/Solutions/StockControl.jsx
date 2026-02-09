@@ -25,7 +25,7 @@ const StockControl = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/customer-management.png" alt="Customer Relationship Management" />
+                        <img src="/webapp/images/illustrations/customer-management.png" alt="Customer Relationship Management" />
                     </div>
                 </section>
 
@@ -44,7 +44,7 @@ const StockControl = () => {
                         </ul>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/analytics-reports.png" alt="Customer Insights" />
+                        <img src="/webapp/images/illustrations/analytics-reports.png" alt="Customer Insights" />
                     </div>
                 </section>
 
@@ -60,7 +60,7 @@ const StockControl = () => {
                         </button>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/customer-support-demo.png" alt="Support Team with CRM" />
+                        <img src="/webapp/images/illustrations/customer-support-demo.png" alt="Support Team with CRM" />
                     </div>
                 </section>
             </div>

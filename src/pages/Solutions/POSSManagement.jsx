@@ -23,7 +23,7 @@ const POSSManagement = () => {
                     </div>
                 </div>
                 <div className="poss-hero-image">
-                    <img src="images/poss/hero.png" alt="Petpooja Style POS" />
+                    <img src="/webapp/images/poss/hero.png" alt="Petpooja Style POS" />
                 </div>
             </section>
 
@@ -42,7 +42,7 @@ const POSSManagement = () => {
                         <p>Print your restaurant logo, create bill break-ups, edit customer details or add a dynamic QR code for payments right at the billing counter - everything is possible with StoreZen restaurant POS software.</p>
                     </div>
                     <div className="poss-feature-img-container bg-peach">
-                        <img src="images/poss/receipt.png" alt="Customizable Bill" />
+                        <img src="/webapp/images/poss/receipt.png" alt="Customizable Bill" />
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ const POSSManagement = () => {
                         <p>In need of multiple billing terminals for your different areas and menus? Don't worry! StoreZen POS lets you easily create multiple billing counters and sync them with one master station.</p>
                     </div>
                     <div className="poss-feature-img-container bg-blue">
-                        <img src="images/poss/multi_terminal.png" alt="Multi-terminal" />
+                        <img src="/webapp/images/poss/multi_terminal.png" alt="Multi-terminal" />
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ const POSSManagement = () => {
                         <p>Got different cooking stations? Assign a unique printer to every station and send KOTs to the respective stations. Smoothly sync them all with the master POS.</p>
                     </div>
                     <div className="poss-feature-img-container bg-green">
-                        <img src="images/poss/kot.png" alt="KOT Printing" />
+                        <img src="/webapp/images/poss/kot.png" alt="KOT Printing" />
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@ const POSSManagement = () => {
                         <p>Big restaurants, big problems. Minimise your problems by making your area and table management simple. Configure different dine-in areas with their respective menus and customisable seating arrangements.</p>
                     </div>
                     <div className="poss-feature-img-container bg-rose">
-                        <img src="images/poss/table_management.png" alt="Table Management" />
+                        <img src="/webapp/images/poss/table_management.png" alt="Table Management" />
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@ const POSSManagement = () => {
                         <p>Switch to a restaurant billing software that lets you easily configure and levy different taxes, update tax rates and offer discounts depending on your service types and business needs!</p>
                     </div>
                     <div className="poss-feature-img-container bg-peach">
-                        <img src="images/poss/taxes_discounts.png" alt="Taxes and Discounts" />
+                        <img src="/webapp/images/poss/taxes_discounts.png" alt="Taxes and Discounts" />
                     </div>
                 </div>
             </section>
@@ -99,32 +99,32 @@ const POSSManagement = () => {
                 </div>
                 <div className="billing-features-grid">
                     <div className="billing-feature-card">
-                        <div className="billing-icon-box"><img src="images/poss/taxes_discounts.png" alt="Split Billing" /></div>
+                        <div className="billing-icon-box"><img src="/webapp/images/poss/taxes_discounts.png" alt="Split Billing" /></div>
                         <h4>Split Billing</h4>
                         <p>Divide bills by items, persons, or equal amounts seamlessly for large groups.</p>
                     </div>
                     <div className="billing-feature-card">
-                        <div className="billing-icon-box"><img src="images/poss/icon_cloud_kitchen.png" alt="Offline Billing" /></div>
+                        <div className="billing-icon-box"><img src="/webapp/images/poss/icon_cloud_kitchen.png" alt="Offline Billing" /></div>
                         <h4>Offline Billing</h4>
                         <p>Bills don't wait for the internet. Keep orders moving and sync automatically when online.</p>
                     </div>
                     <div className="billing-feature-card">
-                        <div className="billing-icon-box"><img src="images/poss/multi_terminal.png" alt="Multi-Pay" /></div>
+                        <div className="billing-icon-box"><img src="/webapp/images/poss/multi_terminal.png" alt="Multi-Pay" /></div>
                         <h4>Mixed Payments</h4>
                         <p>Accept Cash, Card, and UPI payments simultaneously for a single bill.</p>
                     </div>
                     <div className="billing-feature-card">
-                        <div className="billing-icon-box"><img src="images/poss/taxes_discounts.png" alt="Smart Discounts" style={{ filter: 'hue-rotate(45deg)' }} /></div>
+                        <div className="billing-icon-box"><img src="/webapp/images/poss/taxes_discounts.png" alt="Smart Discounts" style={{ filter: 'hue-rotate(45deg)' }} /></div>
                         <h4>Smart Discounts</h4>
                         <p>Apply automated or manual discounts with custom rules and manager approval.</p>
                     </div>
                     <div className="billing-feature-card">
-                        <div className="billing-icon-box"><img src="images/poss/table_management.png" alt="Bill Parking" /></div>
+                        <div className="billing-icon-box"><img src="/webapp/images/poss/table_management.png" alt="Bill Parking" /></div>
                         <h4>Bill Parking</h4>
                         <p>Pause any bill to handle a different customer and resume it instantly with zero data loss.</p>
                     </div>
                     <div className="billing-feature-card">
-                        <div className="billing-icon-box"><img src="images/poss/icon_chains.png" alt="Anti-Fraud Audit" /></div>
+                        <div className="billing-icon-box"><img src="/webapp/images/poss/icon_chains.png" alt="Anti-Fraud Audit" /></div>
                         <h4>Anti-Fraud Audit</h4>
                         <p>Track every single void, edit, or reprint with manager alerts to prevent pilferage.</p>
                     </div>
@@ -139,7 +139,7 @@ const POSSManagement = () => {
                 </div>
                 <div className="poss-quick-container">
                     <div className="poss-quick-visual">
-                        <img src="images/poss/terminal.png" alt="POS Hardware" style={{ width: '100%', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', border: '1px solid var(--color-border-light)' }} />
+                        <img src="/webapp/images/poss/terminal.png" alt="POS Hardware" style={{ width: '100%', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', border: '1px solid var(--color-border-light)' }} />
                     </div>
                     <div className="poss-quick-grid">
                         <div className="poss-quick-item">
@@ -214,16 +214,16 @@ const POSSManagement = () => {
                 </div>
                 <div className="poss-outlet-grid">
                     {[
-                        { name: 'Food courts & canteens', path: 'food-court', icon: 'images/poss/icon_food_court.png' },
-                        { name: 'Cafe', path: 'cafe', icon: 'images/poss/icon_cafe.png' },
-                        { name: 'Fine dine', path: 'fine-dine', icon: 'images/poss/icon_fine_dine.png' },
-                        { name: 'Bar & brewery', path: 'bar', icon: 'images/poss/icon_bar.png' },
-                        { name: 'Pizzeria', path: 'pizza', icon: 'images/poss/icon_pizza.png' },
-                        { name: 'QSR', path: 'qsr', icon: 'images/poss/icon_qsr.png' },
-                        { name: 'Desserts', path: 'desserts', icon: 'images/poss/icon_desserts.png' },
-                        { name: 'Large chains', path: 'large-chains', icon: 'images/poss/icon_chains.png' },
-                        { name: 'Bakery', path: 'bakery', icon: 'images/poss/icon_bakery.png' },
-                        { name: 'Cloud kitchens', path: 'cloud-kitchen', icon: 'images/poss/icon_cloud_kitchen.png' }
+                        { name: 'Food courts & canteens', path: 'food-court', icon: '/webapp/images/poss/icon_food_court.png' },
+                        { name: 'Cafe', path: 'cafe', icon: '/webapp/images/poss/icon_cafe.png' },
+                        { name: 'Fine dine', path: 'fine-dine', icon: '/webapp/images/poss/icon_fine_dine.png' },
+                        { name: 'Bar & brewery', path: 'bar', icon: '/webapp/images/poss/icon_bar.png' },
+                        { name: 'Pizzeria', path: 'pizza', icon: '/webapp/images/poss/icon_pizza.png' },
+                        { name: 'QSR', path: 'qsr', icon: '/webapp/images/poss/icon_qsr.png' },
+                        { name: 'Desserts', path: 'desserts', icon: '/webapp/images/poss/icon_desserts.png' },
+                        { name: 'Large chains', path: 'large-chains', icon: '/webapp/images/poss/icon_chains.png' },
+                        { name: 'Bakery', path: 'bakery', icon: '/webapp/images/poss/icon_bakery.png' },
+                        { name: 'Cloud kitchens', path: 'cloud-kitchen', icon: '/webapp/images/poss/icon_cloud_kitchen.png' }
                     ].map(outlet => (
                         <Link
                             key={outlet.name}

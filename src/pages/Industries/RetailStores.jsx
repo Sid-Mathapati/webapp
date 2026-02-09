@@ -23,7 +23,7 @@ const RetailStores = () => {
                         </p>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/pos-billing.png" alt="Retail POS System" />
+                        <img src="/webapp/images/illustrations/pos-billing.png" alt="Retail POS System" />
                     </div>
                 </section>
 
@@ -39,7 +39,7 @@ const RetailStores = () => {
                         </ul>
                     </div>
                     <div className="page-image">
-                        <img src="images/illustrations/customer-management.png" alt="Retail Customer CRM" />
+                        <img src="/webapp/images/illustrations/customer-management.png" alt="Retail Customer CRM" />
                     </div>
                 </section>
             </div>

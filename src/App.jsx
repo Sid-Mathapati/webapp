@@ -87,7 +87,6 @@ function App() {
           {/* Features */}
           <Route path="/features/tracking" element={<RealTimeTracking />} />
           <Route path="/features/analytics" element={<AnalyticsDashboard />} />
-          <Route path="/features/analytics" element={<AnalyticsDashboard />} />
           <Route path="/features/multi-location" element={<MultiLocationSupport />} />
           <Route path="/talk-to-us" element={<TalkToUs />} />
 
